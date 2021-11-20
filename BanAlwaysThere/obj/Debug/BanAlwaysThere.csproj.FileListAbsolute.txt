@@ -1,0 +1,17 @@
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\bin\Debug\BanAlwaysThere.exe.config
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\bin\Debug\BanAlwaysThere.exe
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\bin\Debug\BanAlwaysThere.pdb
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.csproj.AssemblyReference.cache
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.csproj.SuggestedBindingRedirects.cache
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\MainWindow.g.cs
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\App.g.cs
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere_MarkupCompile.cache
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere_MarkupCompile.lref
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\App.baml
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\MainWindow.baml
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.g.resources
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.Properties.Resources.resources
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.csproj.GenerateResource.cache
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.csproj.CoreCompileInputs.cache
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.exe
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.pdb

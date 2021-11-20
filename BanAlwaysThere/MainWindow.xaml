@@ -1,0 +1,73 @@
+﻿<Window x:Class="BanAlwaysThere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BanAlwaysThere"
+        mc:Ignorable="d"
+        Style="{StaticResource MainWindow}" Name="WinMain" SizeChanged="WinMain_SizeChanged">
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="355"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+
+
+        <Border Style="{StaticResource BrdUpPanle}"/>
+        <Image Style="{StaticResource ImgLogoUpPanel}"/>
+        <StackPanel Style="{StaticResource StoBtnUpPanel}">
+
+            <Button Name="BtnMinWindow" Click="BtnMinWindow_Click" Style="{StaticResource BtnMinimize}"/>
+            <Button Name="BtnResizeWindow" Click="BtnResizeWindow_Click" Style="{StaticResource BtnResize}"/>
+            <Button Name="BtnShutDown" Click="BtnShutDown_Click" Style="{StaticResource BtnShutDown}"/>
+
+        </StackPanel>
+        
+        <Border Style="{StaticResource BrdLeftMenu}"/>
+
+        <StackPanel Style="{StaticResource StpLeftMenu}">
+
+            <StackPanel Style="{StaticResource StpLeftMenuHelp}">
+            
+                <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgHome.png"/>
+                <TextBlock Name="TxtMainMenu" Style="{StaticResource TxtLeftMenu}" Text="Главная"/>
+
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StpLeftMenuHelp}">
+
+                <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgContacts.png"/>
+                <TextBlock Name="TxtContacts" Style="{StaticResource TxtLeftMenu}" Text="Контакты"/>
+
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StpLeftMenuHelp}">
+
+                <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgProfile.png"/>
+                <TextBlock Name="TxtProfile" Style="{StaticResource TxtLeftMenu}" HorizontalAlignment="Center" Text="Личный кабинет"/>
+
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StpLeftMenuHelp}">
+
+                <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgExit.png"/>
+                <TextBlock Name="TxtLogOut" Style="{StaticResource TxtLeftMenu}" Text="Выйти"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>
