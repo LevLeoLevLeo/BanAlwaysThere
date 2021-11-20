@@ -27,6 +27,25 @@ namespace BanAlwaysThere.Pages
 
         private void PgProfile_SizeChanged(object sender, SizeChangedEventArgs e)
         {
+            
+            if (WindowWidth < 1773)
+
+            {
+
+                StpUserInfo.Orientation = Orientation.Vertical;
+                StpUserTextInfo.HorizontalAlignment = HorizontalAlignment.Left;
+
+            }
+
+            else 
+            
+            {
+
+                StpUserInfo.Orientation = Orientation.Horizontal;
+                StpUserTextInfo.HorizontalAlignment = HorizontalAlignment.Right;
+
+            }
+
             if (ActualWidth < 1600)
 
             {

@@ -13,6 +13,7 @@
         <Grid.RowDefinitions>
 
             <RowDefinition Height="310"/>
+            <RowDefinition Height="130"/>
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
@@ -36,6 +37,43 @@
             <TextBlock Style="{StaticResource Txt30pt}" Text="Илон Маск" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0"/>
 
         </StackPanel>
+            
+
+        <ScrollViewer Grid.Row="2">
+        <StackPanel Name="StpUserInfo" Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 50">
+
+            
+            <StackPanel Orientation="Vertical">
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Имя" Margin="21 0 0 0"/>
+                <TextBox Name="TxbFirstName" Style="{StaticResource TxtProfileBox}" Text="Илон"/>
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Фамилия" Margin="21 29 0 0"/>
+                <TextBox Name="TxbLastName" Style="{StaticResource TxtProfileBox}" Text="Маск"/>
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Страна" Margin="21 29 0 0"/>
+                <TextBox Name="TxbCountry" Style="{StaticResource TxtProfileBox}" Text="Grate Britan"/>
+
+            
+        </StackPanel>
+
+                <StackPanel Name="StpUserTextInfo" Orientation="Vertical" Margin="173 0 0 0">
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Логин" Margin="21 0 0 0"/>
+                <TextBox Name="TxbUserLogin" Style="{StaticResource TxtProfileBox}" Text="marsisournewhome"/>
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Почта" Margin="21 29 0 0"/>
+                <TextBox Name="TxbUserEmail" Style="{StaticResource TxtProfileBox}" Text="Mask@gmail.com"/>
+
+                <TextBlock Style="{StaticResource Txt30pt}" Text="Телефон" Margin="21 29 0 0"/>
+                <TextBox Name="TxbUserTelephone" Style="{StaticResource TxtProfileBox}" Text="+7 (999)-873-33-11"/>
+
+            </StackPanel>
+
+
+        </StackPanel>
+
+            </ScrollViewer>
 
     </Grid>
 

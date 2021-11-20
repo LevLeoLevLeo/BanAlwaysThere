@@ -9,8 +9,8 @@
 
         <Style TargetType="Window" x:Key="MainWindow">
 
-            <Setter Property="MinHeight" Value="600px"/>
-            <Setter Property="MinWidth" Value="800px"/>
+            <Setter Property="MinHeight" Value="671px"/>
+            <Setter Property="MinWidth" Value="968px"/>
             <Setter Property="Height" Value="1080px"/>
             <Setter Property="Width" Value="1920px"/>
             <Setter Property="Title" Value="Sber Cloud"/>
@@ -87,7 +87,7 @@
 
         <!--#region TextBox-->
         
-        <Style TargetType="TextBox">
+        <Style TargetType="TextBox" x:Key="TxtProfileBox">
 
             <Setter Property="FontFamily" Value="Roboto"/>
             <Setter Property="FontSize" Value="30pt"/>
@@ -95,6 +95,29 @@
             <Setter Property="Width" Value="592px"/>
             <Setter Property="Height" Value="93px"/>
             <Setter Property="IsEnabled" Value="False"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="Margin" Value="0 8 0 0"/>
+            <Setter Property="Padding" Value="21 0 0 0"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+
+                        <Border Background="{TemplateBinding Background}" CornerRadius="20">
+
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+
+                        </Border>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
 
         </Style>
 
