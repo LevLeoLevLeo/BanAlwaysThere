@@ -33,7 +33,9 @@
             <Button Name="BtnShutDown" Click="BtnShutDown_Click" Style="{StaticResource BtnShutDown}"/>
 
         </StackPanel>
-        
+
+        <Frame Name="FrmMainPage" Style="{StaticResource FrmMain}"/>
+
         <Border Style="{StaticResource BrdLeftMenu}"/>
 
         <StackPanel Style="{StaticResource StpLeftMenu}">

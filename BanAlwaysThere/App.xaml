@@ -30,6 +30,18 @@
 
         <!--#endregion-->
         
+        <!--#region Framee-->
+
+        <Style TargetType="Frame" x:Key="FrmMain">
+
+            <Setter Property="NavigationUIVisibility" Value="Hidden"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Grid.Column" Value="1"/>
+
+        </Style>
+
+        <!--#endregion-->
+        
         <!--#region TextBlock-->
 
         <Style TargetType="TextBlock">
@@ -106,6 +118,27 @@
             <Setter Property="Grid.Column" Value="0"/>
             <Setter Property="Background" Value="#07CC85"/>
             <Setter Property="BorderThickness" Value="0"/>
+
+        </Style>
+
+        <Style TargetType="Border" x:Key="BrdProfile">
+
+            <Setter Property="Grid.Row" Value="0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background">
+
+                <Setter.Value>
+
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,9">
+
+                        <GradientStop Color="#07CC85" Offset="0"/>
+                        <GradientStop Color="#12BBA6" Offset="0.1"/>
+
+                    </LinearGradientBrush>
+                    
+                </Setter.Value>
+                
+            </Setter>
 
         </Style>
         
@@ -206,7 +239,7 @@
         <Style TargetType="Button" x:Key="BtnMinimize" BasedOn="{StaticResource BtnUpPanel}">
 
             <Setter Property="Background" Value="#F5E16C"/>
-            <Setter Property="ToolTip" Value="Развернуть"/>
+            <Setter Property="ToolTip" Value="Свернуть"/>
             <Setter Property="Margin" Value="0 0 18 0"/>
 
             <Setter Property="Template">
@@ -280,6 +313,15 @@
 
         </Style>
 
+        <Style TargetType="StackPanel" x:Key="StpUserAvaterName">
+
+            <Setter Property="Margin" Value="0 97 0 0"/>
+            <Setter Property="Grid.RowSpan" Value="2"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+
+        </Style>
+
         <!--#endregion-->
         
         <!--#region Image-->
@@ -304,7 +346,16 @@
             <Setter Property="Source" Value="/Resource/Logo.png"/>
 
         </Style>
-        
+
+        <Style TargetType="Ellipse" x:Key="ImgAvatar">
+
+            <Setter Property="Width" Value="268px"/>
+            <Setter Property="Height" Value="268px"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+
+        </Style>
+
         <!--#endregion-->
 
     </Application.Resources>

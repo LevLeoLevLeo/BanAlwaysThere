@@ -1,0 +1,42 @@
+﻿<Page x:Class="BanAlwaysThere.Pages.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BanAlwaysThere.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1560"
+      Title="Profile" Name="PgProfile" SizeChanged="PgProfile_SizeChanged">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="310"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Border Style="{StaticResource BrdProfile}"/>
+
+        <TextBlock Name="TxtProfile" Style="{StaticResource TxtTitle}" Text="Личный кабинет" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22 37 0 0"/>
+
+        <StackPanel Name="StpUerAvatarName" Style="{StaticResource StpUserAvaterName}">
+
+            <Ellipse Style="{StaticResource ImgAvatar}">
+
+                <Ellipse.Fill>
+
+                    <ImageBrush ImageSource="/Resource/Avatar.png"/>
+
+                </Ellipse.Fill>
+
+            </Ellipse>
+
+            <TextBlock Style="{StaticResource Txt30pt}" Text="Илон Маск" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Page>

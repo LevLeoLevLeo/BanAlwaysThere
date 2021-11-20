@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanAlwaysThere.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace BanAlwaysThere
         public MainWindow()
         {
             InitializeComponent();
+
+            ClassNavigate.frmmainnavigate = FrmMainPage;
+            ClassNavigate.frmmainnavigate.Navigate(new Pages.Profile());
 
             this.MaxHeight = SystemParameters.VirtualScreenHeight; //Установка максимальной высоты окна у приложения при запуске
             this.MaxWidth = SystemParameters.VirtualScreenWidth;   //Установка максимальной ширины окна у приложения при запуске

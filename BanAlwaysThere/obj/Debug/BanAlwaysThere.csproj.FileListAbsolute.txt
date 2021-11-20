@@ -15,3 +15,5 @@ C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.cs
 C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.csproj.CoreCompileInputs.cache
 C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.exe
 C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\BanAlwaysThere.pdb
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\Pages\Profile.g.cs
+C:\Users\LevLe\Desktop\BanAlwaysThere\BanAlwaysThere\obj\Debug\Pages\Profile.baml
