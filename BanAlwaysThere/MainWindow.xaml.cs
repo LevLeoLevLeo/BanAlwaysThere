@@ -26,7 +26,7 @@ namespace BanAlwaysThere
             InitializeComponent();
 
             ClassNavigate.frmmainnavigate = FrmMainPage;
-            ClassNavigate.frmmainnavigate.Navigate(new Pages.Profile());
+            
 
             this.MaxHeight = SystemParameters.VirtualScreenHeight; //Установка максимальной высоты окна у приложения при запуске
             this.MaxWidth = SystemParameters.VirtualScreenWidth;   //Установка максимальной ширины окна у приложения при запуске
@@ -109,6 +109,39 @@ namespace BanAlwaysThere
 
         }
 
+        private void StpProfile_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Hand;
+            TxtProfile.TextDecorations = TextDecorations.Underline;
+        }
+
+        private void StpProfile_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+            TxtProfile.TextDecorations = null;
+        }
+
+        private void StpProfile_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            FrmMainPage.Navigate(new Pages.Profile());
+        }
+
+        private void TxtContacts_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Hand;
+            TxtContacts.TextDecorations = TextDecorations.Underline;
+        }
+
+        private void TxtContacts_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+            TxtContacts.TextDecorations = null;
+        }
+
+        private void TxtContacts_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            FrmMainPage.Navigate(new Pages.PageContact());
+        }
     }
 
 }

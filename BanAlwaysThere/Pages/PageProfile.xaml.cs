@@ -33,7 +33,8 @@ namespace BanAlwaysThere.Pages
             {
 
                 StpUserInfo.Orientation = Orientation.Vertical;
-                StpUserTextInfo.HorizontalAlignment = HorizontalAlignment.Left;
+                StpUserTextInfo.Margin = new Thickness(0, 0, 0, 0);
+                
 
             }
 
@@ -42,7 +43,7 @@ namespace BanAlwaysThere.Pages
             {
 
                 StpUserInfo.Orientation = Orientation.Horizontal;
-                StpUserTextInfo.HorizontalAlignment = HorizontalAlignment.Right;
+                StpUserTextInfo.Margin = new Thickness(173, 0, 0, 0);
 
             }
 
@@ -57,5 +58,6 @@ namespace BanAlwaysThere.Pages
             else TxtProfile.Visibility = Visibility.Visible;
             
         }
+
     }
 }

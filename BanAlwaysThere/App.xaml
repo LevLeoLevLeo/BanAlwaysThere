@@ -98,7 +98,6 @@
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#000"/>
-            <Setter Property="Margin" Value="0 8 0 0"/>
             <Setter Property="Padding" Value="21 0 0 0"/>
 
             <Setter Property="Template">
@@ -299,6 +298,52 @@
 
         <!--#endregion-->
 
+        <Style TargetType="Button" x:Key="BtnEditAvater">
+
+            <Setter Property="Width" Value="68"/>
+            <Setter Property="Height" Value="68"/>
+            <Setter Property="Grid.RowSpan" Value="2"/>
+            <Setter Property="Background" Value="#C4C4C4"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Margin" Value="180 0 0 90"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border Background="{TemplateBinding Background}" CornerRadius="40">
+
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            
+                        </Border>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+            <Style.Triggers>
+
+                <Trigger Property="IsMouseOver" Value="True">
+
+                    <Setter Property="Background" Value="#B5B5B5"/>
+
+                </Trigger>
+
+                <Trigger Property="IsPressed" Value="True">
+
+                    <Setter Property="Background" Value="#5E5E5E"/>
+
+                </Trigger>
+
+            </Style.Triggers>
+
+        </Style>
+
         <!--#endregion-->
         
         <!--#region StackPanel-->
@@ -376,6 +421,18 @@
             <Setter Property="Height" Value="268px"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+
+        </Style>
+
+        <Style TargetType="Image" x:Key="ImgEditProfile">
+
+            <Setter Property="Width" Value="54px"/>
+            <Setter Property="Height" Value="54px"/>
+            <Setter Property="Source" Value="/Resource/ImgPencil.png"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0 32 40 0"/>
 
         </Style>
 

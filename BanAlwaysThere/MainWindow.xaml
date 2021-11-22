@@ -50,11 +50,11 @@
             <StackPanel Style="{StaticResource StpLeftMenuHelp}">
 
                 <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgContacts.png"/>
-                <TextBlock Name="TxtContacts" Style="{StaticResource TxtLeftMenu}" Text="Контакты"/>
+                <TextBlock Name="TxtContacts" MouseEnter="TxtContacts_MouseEnter" MouseLeave="TxtContacts_MouseLeave" PreviewMouseLeftButtonUp="TxtContacts_PreviewMouseLeftButtonUp" Style="{StaticResource TxtLeftMenu}" Text="Контакты"/>
 
             </StackPanel>
 
-            <StackPanel Style="{StaticResource StpLeftMenuHelp}">
+            <StackPanel Name="StpProfile" MouseEnter="StpProfile_MouseEnter" MouseLeave="StpProfile_MouseLeave" PreviewMouseLeftButtonUp="StpProfile_PreviewMouseLeftButtonUp" Style="{StaticResource StpLeftMenuHelp}">
 
                 <Image Style="{StaticResource ImgLeftMenu}" Source="/Resource/ImgProfile.png"/>
                 <TextBlock Name="TxtProfile" Style="{StaticResource TxtLeftMenu}" HorizontalAlignment="Center" Text="Личный кабинет"/>

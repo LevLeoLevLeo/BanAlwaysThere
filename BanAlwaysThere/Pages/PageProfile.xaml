@@ -57,7 +57,7 @@
             
         </StackPanel>
 
-                <StackPanel Name="StpUserTextInfo" Orientation="Vertical" Margin="173 0 0 0">
+            <StackPanel Name="StpUserTextInfo" Orientation="Vertical" Margin="173 0 0 0">
 
                 <TextBlock Style="{StaticResource Txt30pt}" Text="Логин" Margin="21 0 0 0"/>
                 <TextBox Name="TxbUserLogin" Style="{StaticResource TxtProfileBox}" Text="marsisournewhome"/>
@@ -73,7 +73,16 @@
 
         </StackPanel>
 
-            </ScrollViewer>
+
+        </ScrollViewer>
+
+        <Button Style="{StaticResource BtnEditAvater}">
+  
+            <Image Source="/Resource/ImgCamera.png" Width="53px" Height="53px"/>
+
+        </Button>
+        
+        <Image Style="{StaticResource ImgEditProfile}"/>
 
     </Grid>
 
