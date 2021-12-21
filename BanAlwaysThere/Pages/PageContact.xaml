@@ -21,75 +21,8 @@
 
 
 
-            <Border Margin="22 0 19 0" Height="61" Width="847" CornerRadius="10" Background="#07CC85">
+        <TextBox Style="{StaticResource TxtProfileBox}" Text="Search for message or users..." Margin="22 -100 19 0" Height="61" Width="847" Background="#07CC85"/>
 
-                <TextBlock Style="{StaticResource Txt15pt}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20 0 0 0" Text="Search for messages or users..."/>
-
-            </Border>
-            
-
-
-        <Grid Background="#FFF" Name="GrdContactInfo" Grid.Column="1">
-
-            <Grid.RowDefinitions>
-
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="230"/>
-                <RowDefinition Height="*"/>
-
-            </Grid.RowDefinitions>
-
-            <Border Style="{StaticResource BrdProfile}"/>
-            
-            <Image Source="/Resource/ImgMessage.png" Style="{StaticResource ImgEditProfile}"/>
-            <Image Source="/Resource/ImgPhone.png" Style="{StaticResource ImgEditProfile}" Margin="0 30 100 0"/>
-
-            <StackPanel Name="StpUerAvatarName" Style="{StaticResource StpUserAvaterName}">
-
-                <Ellipse Margin="0 -60 0 0" Style="{StaticResource ImgAvatar}">
-
-                    <Ellipse.Fill>
-
-                        <ImageBrush ImageSource="/Resource/Avatar.png"/>
-
-                    </Ellipse.Fill>
-
-                </Ellipse>
-
-                <TextBlock Style="{StaticResource Txt30pt}" Text="Илон Маск" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0"/>
-
-            </StackPanel>
-
-
-            <ScrollViewer Grid.Row="2">
-                <StackPanel Name="StpContactInfo" Orientation="Vertical" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 50">
-
-
-                    <StackPanel Orientation="Vertical">
-
-                        <TextBlock Style="{StaticResource Txt30pt}" Text="Имя" Margin="21 0 0 0"/>
-                        <TextBox Name="TxbContactFirstName" Style="{StaticResource TxtProfileBox}" Text="Илон"/>
-
-                        <TextBlock Style="{StaticResource Txt30pt}" Text="Фамилия" Margin="21 29 0 0"/>
-                        <TextBox Name="TxbContactLastName" Style="{StaticResource TxtProfileBox}" Text="Маск"/>
-
-                        <TextBlock Style="{StaticResource Txt30pt}" Text="Почта" Margin="21 29 0 0"/>
-                        <TextBox Name="TxbContactEmail" Style="{StaticResource TxtProfileBox}" Text="Mask@gmail.com"/>
-
-                        <TextBlock Style="{StaticResource Txt30pt}" Text="Телефон" Margin="21 29 0 0"/>
-                        <TextBox Name="TxbContactTelephone" Style="{StaticResource TxtProfileBox}" Text="+7 (999)-873-33-11"/>
-
-                        <TextBlock Style="{StaticResource Txt30pt}" Text="Страна" Margin="21 29 0 0"/>
-                        <TextBox Name="TxbContactCountry" Style="{StaticResource TxtProfileBox}" Text="Grate Britan"/>
-
-                    </StackPanel>
-
-                </StackPanel>
-
-            </ScrollViewer>
-
-        </Grid>
-        
     </Grid>
 
 </Page>

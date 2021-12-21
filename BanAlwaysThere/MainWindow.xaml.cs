@@ -28,7 +28,7 @@ namespace BanAlwaysThere
             ClassNavigate.frmmainnavigate = FrmMainPage;
             
 
-            this.MaxHeight = SystemParameters.VirtualScreenHeight; //Установка максимальной высоты окна у приложения при запуске
+            this.MaxHeight = SystemParameters.VirtualScreenHeight - 33; //Установка максимальной высоты окна у приложения при запуске
             this.MaxWidth = SystemParameters.VirtualScreenWidth;   //Установка максимальной ширины окна у приложения при запуске
 
         }
@@ -98,10 +98,12 @@ namespace BanAlwaysThere
             {
 
                 case WindowState.Maximized:
+                    this.BorderThickness = new Thickness(7.4, 7.4, 7.4, 0);
                     BtnResizeWindow.ToolTip = "Восстановить";
                     break;
 
                 case WindowState.Normal:
+                    this.BorderThickness = new Thickness(0);
                     BtnResizeWindow.ToolTip = "Развернуть";
                     break;
 
